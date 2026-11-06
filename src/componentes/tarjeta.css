@@ -1,0 +1,61 @@
+.tarjeta {
+    background-color: #fcecf5;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    color: #454080;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.tarjeta h2 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+}
+.icono {
+    background-color: #ef9bd0;
+    color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.tarjeta button {
+    background-color: #454080;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tarjeta button:hover { background-color: #6259a6; }
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 830px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.imagenTarjeta {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 800px) {
+    .contenedor { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+    .contenedor { grid-template-columns: 1fr; }
+}

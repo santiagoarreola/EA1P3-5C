@@ -1,0 +1,30 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.formulario textarea { resize: vertical; }
+
+.formulario button {
+    background-color: #454080;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario button:hover { background-color: #6259a6; }
