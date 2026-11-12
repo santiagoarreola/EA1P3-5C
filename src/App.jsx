@@ -4,6 +4,8 @@ import Home from './paginas/Home';
 import Preguntas from './paginas/Preguntas';
 import Productos from './paginas/Productos';
 import Header from './componentes/Header';
+import Login from './paginas/login';
+import Registro from './paginas/Registro';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
      <Route path="/" element={<Home />} />
      <Route path="/preguntas" element={<Preguntas />} />
      <Route path="/productos" element={<Productos />} />
+     <Route path="/login" element={<Login />} />
+     <Route path="/registro" element={<Registro />} />
    </Routes>
  </BrowserRouter>
  </>

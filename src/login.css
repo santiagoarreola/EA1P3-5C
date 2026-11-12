@@ -1,0 +1,126 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: left;
+}
+.login input {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+.login button {
+    background-color: #454080;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login button:hover { background-color: #6259a6; }
+.login a { color: #184461; }
+
+/* Recuadro de inicio de sesión basado en la referencia de clase */
+.pagina-login {
+    display: flex;
+    justify-content: center;
+    padding: 42px 20px;
+    color: #172552;
+}
+.marco-login {
+    width: 480px;
+    max-width: 100%;
+    padding: 28px;
+    background: #83a8f3;
+}
+.tarjeta-login {
+    padding: 34px 30px 30px;
+    border-radius: 30px;
+    background: #edf2fb;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.pestanas-login {
+    display: flex;
+    border-bottom: 1px solid #ced6e6;
+}
+.pestanas-login a {
+    flex: 1;
+    padding: 10px 4px 15px;
+    color: #737c93;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+}
+.pestanas-login .pestana-activa {
+    color: #172552;
+    border-bottom-color: #172552;
+    font-weight: bold;
+}
+.tarjeta-login h1 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 30px 0 18px;
+}
+.subtitulo-login {
+    margin: 0 0 28px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.formulario-login {
+    max-width: none;
+    margin: 0;
+    gap: 26px;
+    padding: 26px 18px 8px;
+    background: #e8eef9;
+    border-radius: 14px;
+}
+.formulario-login input {
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #d5dff3;
+    color: #172552;
+    font-size: 14px;
+}
+.formulario-login input::placeholder { color: #68738d; opacity: 1; }
+.formulario-login input:focus {
+    outline: 2px solid #4268a5;
+    outline-offset: 2px;
+}
+.formulario-login button {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 12px;
+    border: 2px solid #fff;
+    border-radius: 28px;
+    background: #172552;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+.formulario-login button:hover { background: #253b76; }
+.etiqueta-oculta {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+.error-login { margin: 0; color: #a02232; font-size: 14px; }
+@media (max-width: 500px) {
+    .pagina-login { padding: 24px 12px; }
+    .marco-login { padding: 18px; }
+    .tarjeta-login { padding: 24px 16px; }
+    .formulario-login { padding: 22px 12px 8px; }
+}
